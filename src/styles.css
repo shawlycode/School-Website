@@ -320,14 +320,44 @@ header {
   content: "";
   width: 4rem;
   height: 4rem;
-  background-color: var(--color-bg2);
   background: var(--color-bg2);
   display: block;
   position: absolute;
-  left: 40%;
+  left: 43%;
   top: -1.5rem;
   transform: rotate(45deg);
   z-index: -1;
-  border: 0.5px solid var(--color-bg);
+  border: 0.5px solid var(--color-white);
   border-radius: 50%;
+}
+
+footer {
+  background: var(--color-bg1);
+  padding: 5rem;
+}
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.footer__container > div h4 {
+  margin-bottom: 1.3rem;
+}
+.footer-1 p {
+  margin: 0 2rem;
+}
+.footer__socials {
+  gap: 2rem;
+  font-size: 2rem;
+  transition: var(--transition);
+}
+.footer__socials i:hover {
+  color: var(--color-success);
+}
+
+.copy__right {
+  text-align: center;
+  border-top: 0.5px solid var(--color-bg2);
+  margin-top: 2rem;
+  padding: 2rem;
 }
