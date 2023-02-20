@@ -155,7 +155,7 @@ header {
 /* Categories  styles */
 .categories {
   background: var(--color-bg1);
-  height: 29rem;
+  height: 26rem;
 }
 .categories h1 {
   line-height: 1;
@@ -208,9 +208,9 @@ header {
 .category:nth-child(6) .category__icon {
   background: var(--color-danger);
 }
-
+/* Courses  styles */
 .courses {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 .courses__container {
   display: grid;
@@ -240,4 +240,94 @@ header {
 .course__info p {
   font-size: 0.8rem;
   margin: 0.5rem 0 0;
+}
+
+/* FAQ'S  styles */
+
+.faqs {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.faqs__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  align-items: center;
+  transition: 0.4s;
+}
+.faq {
+  display: flex;
+  background: var(--color-bg2);
+  padding: 1rem;
+  border-radius: 0.3rem;
+  height: fit-content;
+  cursor: pointer;
+  gap: 1.4rem;
+}
+.faq i {
+  align-self: flex-start;
+  font-size: 1.2rem;
+}
+.faq__question h4 {
+  font-size: 1rem;
+  align-items: center;
+  line-height: 2.2rem;
+}
+.faq__question p {
+  font-size: 0.8rem;
+  display: none;
+  margin-top: 0.8rem;
+}
+.faq.open p {
+  display: block;
+  transition: var(--transition);
+}
+.faq.active {
+  transition: var(--transition);
+}
+
+.testimonials__container {
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.testimonial {
+  padding: 2rem;
+  cursor: pointer;
+}
+.avatar {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 0.3rem solid var(--color-bg2);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.testimonial__info {
+  text-align: center;
+}
+.testimonial__body {
+  background: var(--color-bg2);
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 0.3rem;
+  position: relative;
+}
+
+.testimonial__body::before {
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--color-bg2);
+  background: var(--color-bg2);
+  display: block;
+  position: absolute;
+  left: 40%;
+  top: -1.5rem;
+  transform: rotate(45deg);
+  z-index: -1;
+  border: 0.5px solid var(--color-bg);
+  border-radius: 50%;
 }
