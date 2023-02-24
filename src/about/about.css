@@ -1,0 +1,105 @@
+.achievement__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-right: 1rem;
+}
+.achievement {
+  background: var(--color-bg2);
+  padding: 2rem;
+  align-items: center;
+  border-radius: 0.3rem;
+  margin: 1.7rem 0 1rem;
+}
+.header-right h2 {
+  margin-bottom: 1rem;
+}
+
+.team {
+  background: var(--color-bg1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.team-_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.team__member {
+  background: var(--color-bg2);
+  padding: 1.2rem;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+.team__member-img {
+  border-radius: 0.3rem;
+  padding-bottom: 1rem;
+}
+.team__member-img img {
+  border-radius: 0.3rem;
+  filter: saturate(0);
+}
+.team__member-img img:hover {
+  border-radius: 0.3rem;
+  filter: saturate(1);
+  transition: var(--transition);
+}
+.team__member p {
+  color: var(--color-light);
+  font-size: 0.8rem;
+}
+.team__member h4 {
+  font-size: 1rem;
+  padding-bottom: 0.3rem;
+}
+.team__member {
+  background: var(--color-bg2);
+  padding: 1rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.team__member:hover {
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.team__member-socials {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translateY(-125%);
+  right: -100%;
+  background: var(--color-bg1);
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+
+  transition: var(--transition);
+}
+.team__member-socials a {
+  padding: 0.8rem;
+  transition: var(--transition);
+}
+.team__member-socials a:nth-child(1):hover {
+  background: var(--color-success);
+  border-top-left-radius: 0.3rem;
+}
+.team__member-socials a:nth-child(2):hover {
+  background: var(--color-success);
+}
+.team__member-socials a:nth-child(3):hover {
+  background: var(--color-success);
+  border-bottom-left-radius: 0.3rem;
+}
+
+.team__member:hover .team__member-socials {
+  right: 0;
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+  .header {
+  }
+}
