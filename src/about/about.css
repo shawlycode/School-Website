@@ -11,6 +11,29 @@
   border-radius: 0.3rem;
   margin: 1.7rem 0 1rem;
 }
+.achievement__container article {
+  width: 10rem;
+}
+.achievement__container article i {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0.6rem;
+  border-radius: 25%;
+  align-self: flex-start;
+  color: var(--color-bg1);
+}
+.achievement__container article i:nth-child(1) {
+  background: var(--color-success);
+}
+.achievement__container article:nth-child(2) i {
+  background: var(--color-warning);
+}
+.achievement__container article:nth-child(3) i {
+  background: var(--color-danger);
+}
+article h4 {
+  padding-top: 1rem;
+}
 .header-right h2 {
   margin-bottom: 1rem;
 }
