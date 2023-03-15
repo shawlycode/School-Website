@@ -360,7 +360,7 @@ footer {
 }
 .footer__socials {
   gap: 2rem;
-  font-size: 2rem;
+  font-size: 1.3rem;
   transition: var(--transition);
 }
 .footer__socials i:hover {

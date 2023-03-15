@@ -37,7 +37,6 @@ article h4 {
 .header-right h2 {
   margin-bottom: 1rem;
 }
-
 .team {
   background: var(--color-bg1);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
@@ -98,7 +97,6 @@ article h4 {
   background: var(--color-bg1);
   border-top-left-radius: 0.3rem;
   border-bottom-left-radius: 0.3rem;
-
   transition: var(--transition);
 }
 .team__member-socials a {
@@ -116,12 +114,9 @@ article h4 {
   background: var(--color-success);
   border-bottom-left-radius: 0.3rem;
 }
-
 .team__member:hover .team__member-socials {
   right: 0;
-}
-
-/* media query */
+} /* media query */
 @media screen and (max-width: 600px) {
   .header {
   }
